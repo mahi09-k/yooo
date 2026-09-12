@@ -1,0 +1,57 @@
+/* ── Tailwind CSS Directives ──────────────────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global Base Styles (Pinch of Yum) ────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #4d4d4d;
+  font-family: 'Bitter', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #1a1a1a;
+}
+
+p {
+  color: #4d4d4d;
+  line-height: 1.65;
+}
+
+/* ── Reusable Component Classes (Pinch of Yum signature UI) ───────────────── */
+@layer components {
+  /* Pinch of Yum Purple Action Button */
+  .btn-poy-purple {
+    @apply inline-flex items-center justify-center font-sans font-bold uppercase tracking-widest text-xs
+           bg-poy-purple text-white px-6 py-3 transition-all duration-200 hover:bg-poy-purple-dark;
+  }
+
+  /* Pinch of Yum Dark Button */
+  .btn-poy-dark {
+    @apply inline-flex items-center justify-center font-sans font-bold uppercase tracking-widest text-xs
+           bg-poy-gray-700 text-white px-6 py-3 transition-all duration-200 hover:bg-poy-gray-900;
+  }
+
+  /* Pinch of Yum Yellow Floating Badge on Food Photos */
+  .badge-poy-yellow {
+    @apply bg-poy-yellow text-white text-[11px] font-sans font-bold uppercase tracking-giant px-4 py-1.5 shadow-sm;
+  }
+
+  /* Form input in Pinch of Yum style */
+  .input-poy {
+    @apply w-full border border-gray-300 bg-white px-4 py-3 text-poy-gray-800 placeholder-gray-400
+           focus:border-poy-purple focus:ring-1 focus:ring-poy-purple outline-none transition duration-150 font-sans text-sm;
+  }
+
+  /* Section Container */
+  .section-poy {
+    @apply max-w-6xl mx-auto px-4 lg:px-0 py-8;
+  }
+}
