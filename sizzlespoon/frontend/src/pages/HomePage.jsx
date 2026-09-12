@@ -9,6 +9,7 @@ const CATEGORY_THUMBNAILS = [
   { name: 'Chinese', img: '/images/kung_pao_chicken.jpg' },
   { name: 'French', img: '/images/beef_bourguignon.jpg' },
   { name: 'Western', img: '/images/smash_burger.jpg' },
+  { name: 'Carbonara', img: '/images/pasta_carbonara.jpg' },
   { name: 'Italian', img: '/images/lasagna_bolognese.jpg' },
   { name: 'Dim Sum', img: '/images/chinese_dumplings.jpg' },
   { name: 'Paneer', img: '/images/paneer_tikka_masala.jpg' },

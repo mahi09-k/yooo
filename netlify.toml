@@ -1,0 +1,10 @@
+﻿[build]
+  base = "sizzlespoon/frontend"
+  publish = "dist"
+  command = "npm run build"
+
+# SPA Fallback: redirect all non-file paths to index.html with 200 status
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
